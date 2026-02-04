@@ -744,3 +744,12 @@ object-position: center top;
   transform: translateY(-3px);
   box-shadow: 0 22px 50px rgba(11,22,36,0.1);
 }
+
+
+/* --- small preview & thumbnail polish --- */
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; -webkit-font-smoothing:antialiased;}
+.page{max-width:1100px;margin:18px auto;padding:16px;} /* keeps content centered for previews */
+.project-card{border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(15,20,30,0.06);}
+.project-card__thumb{background-size:cover;background-position:center;height:160px;} /* consistent thumbnails for preview */
+.project-card__body{padding:12px;background:#fff;} /* readable text area */
+.meta-hide{display:none !important;} /* utility if any ugly element shows up in previews; you can add this class to hide it */
